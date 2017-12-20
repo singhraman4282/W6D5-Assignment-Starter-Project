@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2A3561381FDCF496007EEEDC /* w6d3-fetchedresultscontroller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "w6d3-fetchedresultscontroller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A3561381FDCF496007EEEDC /* w6d5-ui-performance-testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "w6d5-ui-performance-testing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A35613B1FDCF496007EEEDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A35613E1FDCF496007EEEDC /* w6d3_fetchedresultscontroller.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = w6d3_fetchedresultscontroller.xcdatamodel; sourceTree = "<group>"; };
 		2A3561401FDCF496007EEEDC /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		2A35612F1FDCF496007EEEDC = {
 			isa = PBXGroup;
 			children = (
-				2A35613A1FDCF496007EEEDC /* w6d3-fetchedresultscontroller */,
+				2A35613A1FDCF496007EEEDC /* w6d5-ui-performance-testing */,
 				2A3561391FDCF496007EEEDC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +50,12 @@
 		2A3561391FDCF496007EEEDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A3561381FDCF496007EEEDC /* w6d3-fetchedresultscontroller.app */,
+				2A3561381FDCF496007EEEDC /* w6d5-ui-performance-testing.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2A35613A1FDCF496007EEEDC /* w6d3-fetchedresultscontroller */ = {
+		2A35613A1FDCF496007EEEDC /* w6d5-ui-performance-testing */ = {
 			isa = PBXGroup;
 			children = (
 				2A35613B1FDCF496007EEEDC /* AppDelegate.swift */,
@@ -67,15 +67,15 @@
 				2A35614C1FDCF496007EEEDC /* Info.plist */,
 				2A35613D1FDCF496007EEEDC /* w6d3_fetchedresultscontroller.xcdatamodeld */,
 			);
-			path = "w6d3-fetchedresultscontroller";
+			path = "w6d5-ui-performance-testing";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2A3561371FDCF496007EEEDC /* w6d3-fetchedresultscontroller */ = {
+		2A3561371FDCF496007EEEDC /* w6d5-ui-performance-testing */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A35614F1FDCF496007EEEDC /* Build configuration list for PBXNativeTarget "w6d3-fetchedresultscontroller" */;
+			buildConfigurationList = 2A35614F1FDCF496007EEEDC /* Build configuration list for PBXNativeTarget "w6d5-ui-performance-testing" */;
 			buildPhases = (
 				2A3561341FDCF496007EEEDC /* Sources */,
 				2A3561351FDCF496007EEEDC /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = "w6d3-fetchedresultscontroller";
+			name = "w6d5-ui-performance-testing";
 			productName = "w6d3-fetchedresultscontroller";
-			productReference = 2A3561381FDCF496007EEEDC /* w6d3-fetchedresultscontroller.app */;
+			productReference = 2A3561381FDCF496007EEEDC /* w6d5-ui-performance-testing.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2A3561331FDCF496007EEEDC /* Build configuration list for PBXProject "w6d3-fetchedresultscontroller" */;
+			buildConfigurationList = 2A3561331FDCF496007EEEDC /* Build configuration list for PBXProject "w6d5-ui-performance-testing" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,7 +119,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2A3561371FDCF496007EEEDC /* w6d3-fetchedresultscontroller */,
+				2A3561371FDCF496007EEEDC /* w6d5-ui-performance-testing */,
 			);
 		};
 /* End PBXProject section */
@@ -284,9 +284,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q9N5PH89AB;
-				INFOPLIST_FILE = "w6d3-fetchedresultscontroller/Info.plist";
+				INFOPLIST_FILE = "w6d5-ui-performance-testing/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lighthouselabs.w6d3-fetchedresultscontroller";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lighthouselabs.w6d5-ui-performance-testing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,9 +299,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q9N5PH89AB;
-				INFOPLIST_FILE = "w6d3-fetchedresultscontroller/Info.plist";
+				INFOPLIST_FILE = "w6d5-ui-performance-testing/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lighthouselabs.w6d3-fetchedresultscontroller";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lighthouselabs.w6d5-ui-performance-testing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -311,7 +311,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2A3561331FDCF496007EEEDC /* Build configuration list for PBXProject "w6d3-fetchedresultscontroller" */ = {
+		2A3561331FDCF496007EEEDC /* Build configuration list for PBXProject "w6d5-ui-performance-testing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A35614D1FDCF496007EEEDC /* Debug */,
@@ -320,7 +320,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A35614F1FDCF496007EEEDC /* Build configuration list for PBXNativeTarget "w6d3-fetchedresultscontroller" */ = {
+		2A35614F1FDCF496007EEEDC /* Build configuration list for PBXNativeTarget "w6d5-ui-performance-testing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A3561501FDCF496007EEEDC /* Debug */,
