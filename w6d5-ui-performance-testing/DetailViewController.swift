@@ -27,7 +27,8 @@ extension DetailViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //
         configureView()
     }
 }
@@ -39,6 +40,7 @@ extension DetailViewController {
         // Update the user interface for the detail item.
         if let detailItem = detailItem, let label = detailDescriptionLabel, let mealName = detailItem.name {
             label.text = "\(mealName) - \(detailItem.calories)"
+            label.accessibilityIdentifier = "detailViewControllerLabel"
         }
     }
 }

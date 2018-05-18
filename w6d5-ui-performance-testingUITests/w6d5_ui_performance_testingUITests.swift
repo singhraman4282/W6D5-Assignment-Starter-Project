@@ -29,51 +29,75 @@ class w6d5_ui_performance_testingUITests: XCTestCase {
     }
     
     func testUI() {
-        
-//        let app = XCUIApplication()
-//        app.navigationBars["Master"].buttons["Add"].tap()
-//
-//        let addAMealAlert = app.alerts["Add a Meal"]
-//        let collectionViewsQuery = addAMealAlert.collectionViews
-//        collectionViewsQuery.children(matching: .other).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .textField).element.typeText("Burger")
-//
-//        let textField = collectionViewsQuery.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .textField).element
-//        textField.tap()
-//        textField.typeText("300")
-//        addAMealAlert.buttons["Ok"].tap()
-//
-        
-        
-        
-        let app2 = XCUIApplication()
-        app2.navigationBars["Master"].buttons["Add"].tap()
-        
-        let addAMealAlert = app2.alerts["Add a Meal"]
-        let collectionViewsQuery = addAMealAlert.collectionViews
-        let textField = collectionViewsQuery.children(matching: .other).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .textField).element
-        textField.tap()
-        textField.tap()
-        
-        let rKey = app2/*@START_MENU_TOKEN@*/.keys["r"]/*[[".keyboards.keys[\"r\"]",".keys[\"r\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        rKey.tap()
-        rKey.tap()
-        
-        let tKey = app2/*@START_MENU_TOKEN@*/.keys["t"]/*[[".keyboards.keys[\"t\"]",".keys[\"t\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        tKey.tap()
-        tKey.tap()
-        app2/*@START_MENU_TOKEN@*/.buttons["Return"]/*[[".keyboards",".buttons[\"return\"]",".buttons[\"Return\"]"],[[[-1,2],[-1,1],[-1,0,1]],[[-1,2],[-1,1]]],[0]]@END_MENU_TOKEN@*/.tap()
-        collectionViewsQuery.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .textField).element.tap()
-        
-        let fKey = app2/*@START_MENU_TOKEN@*/.keys["f"]/*[[".keyboards.keys[\"f\"]",".keys[\"f\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
-        fKey.tap()
-        fKey.tap()
-        addAMealAlert.buttons["Ok"].tap()
-       
-        
+//                addNewMeal(mealName: "Burger", calories: 1200)
+//                addNewMeal(mealName: "Tacos", calories: 100)
+//                deleteMeal(mealName: "Burger", calories: 1200)
 
         
         
+              
+        
+        
+        
+        
     }//testUI
+    
+    func testLabelShowsCorrectText() {
+        let app = XCUIApplication()
+        goToDetailViewController(mealName: "Tacos", calories: 100)
+        
+
+        
+//        XCTAssert(app.staticTexts["detailViewControllerLabel"].label == "Tacos - 100", "Expected to be displaying Tacos - 100")
+        
+        
+    }
+    
+    
+    
+    
+    func addNewMeal(mealName:String, calories:Int) {
+        
+        let app = XCUIApplication()
+        app.navigationBars["Master"].buttons["Add"].tap()
+        
+        let addAMealAlert = app.alerts["Add a Meal"]
+        let collectionViewsQuery = addAMealAlert.collectionViews
+        collectionViewsQuery.children(matching: .other).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .textField).element.typeText(mealName)
+        
+        let textField = collectionViewsQuery.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .textField).element
+        textField.tap()
+        textField.typeText("\(calories)")
+        addAMealAlert.buttons["Ok"].tap()
+
+        
+    }//addNewMeal
+    
+    func deleteMeal(mealName:String, calories:Int) {
+        let app = XCUIApplication()
+        let staticText = app.tables.staticTexts["\(mealName) - \(calories)"]
+        if staticText.exists {
+            staticText.swipeLeft()
+            app.tables.buttons["Delete"].tap()
+        }
+    }//deleteMeal
+    
+    func goToDetailViewController(mealName:String, calories:Int) {
+        let app = XCUIApplication()
+        
+        app.tables.staticTexts["\(mealName) - \(calories)"].tap()
+        
+        
+        let tacos100StaticText = app.staticTexts["\(mealName) - \(calories)"]
+        
+        
+        
+    }//goToDetailViewController
+    
+    func goToMain() {
+        let app = XCUIApplication()
+        app.navigationBars["Detail"].buttons["Master"].tap()
+    }
     
     
 }
